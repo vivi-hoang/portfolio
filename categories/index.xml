@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Vivi Hoang</title>
-    <link>https://vivi-hoang.github.io/categories/</link>
+    <link>https://vivihoang.me/categories/</link>
     <description>Recent content in Categories on Vivi Hoang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://vivi-hoang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://vivihoang.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>syntax</title>
-      <link>https://vivi-hoang.github.io/categories/syntax/</link>
+      <link>https://vivihoang.me/categories/syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/categories/syntax/</guid>
+      <guid>https://vivihoang.me/categories/syntax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://vivi-hoang.github.io/categories/themes/</link>
+      <link>https://vivihoang.me/categories/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/categories/themes/</guid>
+      <guid>https://vivihoang.me/categories/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://vivi-hoang.github.io/categories/development/</link>
+      <link>https://vivihoang.me/categories/development/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/categories/development/</guid>
+      <guid>https://vivihoang.me/categories/development/</guid>
       <description></description>
     </item>
     

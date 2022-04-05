@@ -2,26 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vivi Hoang</title>
-    <link>https://vivi-hoang.github.io/</link>
+    <link>https://vivihoang.me/</link>
     <description>Recent content on Vivi Hoang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Mar 2022 11:08:30 -0700</lastBuildDate><atom:link href="https://vivi-hoang.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Thank you for your message</title>
-      <link>https://vivi-hoang.github.io/thank-you/</link>
-      <pubDate>Tue, 05 Apr 2022 15:10:21 -0700</pubDate>
-      
-      <guid>https://vivi-hoang.github.io/thank-you/</guid>
-      <description>I appreciate your reaching out. I&amp;rsquo;ll be in touch soon.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 29 Mar 2022 11:08:30 -0700</lastBuildDate><atom:link href="https://vivihoang.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Background</title>
-      <link>https://vivi-hoang.github.io/background/</link>
+      <link>https://vivihoang.me/background/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/background/</guid>
+      <guid>https://vivihoang.me/background/</guid>
       <description>Education    Master of Science in Applied Computer Science
 Grand Valley State University — December 2021
 Allendale, Michigan
@@ -37,10 +28,10 @@ Allendale, Michigan</description>
     
     <item>
       <title>How Gender Impacts Requirements Engineering</title>
-      <link>https://vivi-hoang.github.io/writing/papers/gender-requirements-engineering/</link>
+      <link>https://vivihoang.me/writing/papers/gender-requirements-engineering/</link>
       <pubDate>Mon, 28 Mar 2022 14:50:51 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/papers/gender-requirements-engineering/</guid>
+      <guid>https://vivihoang.me/writing/papers/gender-requirements-engineering/</guid>
       <description>By Vivi Hoang
 April 20, 2021
 The tech industry continues to grapple with the lack of women and people of color in its ranks even as research has shown that diverse organizations perform better: The wider spectrum of backgrounds, experiences, identities and ideas may produce discomfort but they also produce innovation.1
@@ -49,10 +40,10 @@ This paper focuses specifically on how issues of gender impacts requirements eng
     
     <item>
       <title>The Ethics of Software Engineering from the Lens of Library Science</title>
-      <link>https://vivi-hoang.github.io/writing/papers/ethics-software-engineering/</link>
+      <link>https://vivihoang.me/writing/papers/ethics-software-engineering/</link>
       <pubDate>Mon, 28 Mar 2022 13:46:52 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/papers/ethics-software-engineering/</guid>
+      <guid>https://vivihoang.me/writing/papers/ethics-software-engineering/</guid>
       <description>By Vivi Hoang
 Dec. 10, 2021
 The fields of computer science and library and information science (LIS) have the capacity to learn a great deal from each other. Libraries grapple with budget issues while endeavoring to adequately serve their communities’ intellectual and practical needs. To better fulfill their mission and meet their patrons where they are, libraries have turned to digital products and services produced by software engineering professionals.
@@ -61,10 +52,10 @@ However, sometimes the aims of the two professions can conflict.</description>
     
     <item>
       <title>Algorithmic Bias in Software Design and AI</title>
-      <link>https://vivi-hoang.github.io/writing/papers/bias-in-software-design/</link>
+      <link>https://vivihoang.me/writing/papers/bias-in-software-design/</link>
       <pubDate>Mon, 28 Mar 2022 10:09:14 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/papers/bias-in-software-design/</guid>
+      <guid>https://vivihoang.me/writing/papers/bias-in-software-design/</guid>
       <description>By Vivi Hoang
 Dec. 10, 2021
 Software, as a product of human design, by its very nature has our human worldviews encoded into it, whether intentionally or unintentionally. Artificial intelligence (AI) further plays out that facet of the system context, such as in the AI subfield of machine learning, in which algorithms evolve and adapt based on insights gleaned from large datasets.
@@ -73,10 +64,10 @@ By now, this spectrum of automation pervades our everyday lives.</description>
     
     <item>
       <title>MySpace isn&#39;t private space</title>
-      <link>https://vivi-hoang.github.io/writing/articles/myspace/</link>
+      <link>https://vivihoang.me/writing/articles/myspace/</link>
       <pubDate>Thu, 24 Mar 2022 19:11:30 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/articles/myspace/</guid>
+      <guid>https://vivihoang.me/writing/articles/myspace/</guid>
       <description>By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 Feb. 17, 2008
@@ -86,10 +77,10 @@ Her daughter wasn&amp;rsquo;t fooled by the subterfuge and spotted Weitzman, 48,
     
     <item>
       <title>Kids get to the root of Tooth Fairy mystery</title>
-      <link>https://vivi-hoang.github.io/writing/articles/tooth-fairy/</link>
+      <link>https://vivihoang.me/writing/articles/tooth-fairy/</link>
       <pubDate>Thu, 24 Mar 2022 18:54:01 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/articles/tooth-fairy/</guid>
+      <guid>https://vivihoang.me/writing/articles/tooth-fairy/</guid>
       <description>Youngsters share what they know about pixie who spreads love and cash    By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 Sept. 18, 2006
@@ -100,10 +91,10 @@ No, it&amp;rsquo;s not the bearded guy with a belly that shakes like a bowlful o
     
     <item>
       <title>Do you want to know a secret? For Potter fans, answer is NO</title>
-      <link>https://vivi-hoang.github.io/writing/articles/harry-potter-spoilers/</link>
+      <link>https://vivihoang.me/writing/articles/harry-potter-spoilers/</link>
       <pubDate>Thu, 24 Mar 2022 18:47:18 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/articles/harry-potter-spoilers/</guid>
+      <guid>https://vivihoang.me/writing/articles/harry-potter-spoilers/</guid>
       <description>By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 July 22, 2007
@@ -114,10 +105,10 @@ It&amp;rsquo;s the vast abyss left behind by Harry Potter fans on voluntary lock
     
     <item>
       <title>Sisters preserve inspirational stories of Mama Rose</title>
-      <link>https://vivi-hoang.github.io/writing/articles/mama-rose/</link>
+      <link>https://vivihoang.me/writing/articles/mama-rose/</link>
       <pubDate>Thu, 24 Mar 2022 18:44:20 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/articles/mama-rose/</guid>
+      <guid>https://vivihoang.me/writing/articles/mama-rose/</guid>
       <description>By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 Nov. 25, 2007
@@ -128,10 +119,10 @@ The longtime east Nashville resident died last year at age 67. To forever captur
     
     <item>
       <title>Maggie C’s magazine circle holds unbroken learning tradition</title>
-      <link>https://vivi-hoang.github.io/writing/articles/maggie-c/</link>
+      <link>https://vivihoang.me/writing/articles/maggie-c/</link>
       <pubDate>Thu, 24 Mar 2022 15:48:55 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/articles/maggie-c/</guid>
+      <guid>https://vivihoang.me/writing/articles/maggie-c/</guid>
       <description>By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 June 8, 2008
@@ -141,10 +132,10 @@ It was there that Miss Lizzie christened Magazine Circle, or Maggie C for short.
     
     <item>
       <title>&#39;The Monstrumologist&#39; by Rick Yancey</title>
-      <link>https://vivi-hoang.github.io/writing/reviews/monstrumologist/</link>
+      <link>https://vivihoang.me/writing/reviews/monstrumologist/</link>
       <pubDate>Thu, 24 Mar 2022 14:59:12 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/reviews/monstrumologist/</guid>
+      <guid>https://vivihoang.me/writing/reviews/monstrumologist/</guid>
       <description>Rick Yancey’s The Monstrumologist grabs you by the throat from Page 1 and doesn’t let go. The more you struggle, the more it gleefully squeezes you deeper into its gruesome clutches. And then it swallows you with a flourish and licks its chops.
 That’s how over-the-top shivery and scary this riveting gothic tale is. Do you like monsters? Check. How about violence? Double-check!
 You won’t be able to look away!</description>
@@ -152,49 +143,49 @@ You won’t be able to look away!</description>
     
     <item>
       <title>&#39;I am a Genius of Unspeakable Evil and I want to be your Class President&#39; by Josh Lieb</title>
-      <link>https://vivi-hoang.github.io/writing/reviews/genius/</link>
+      <link>https://vivihoang.me/writing/reviews/genius/</link>
       <pubDate>Thu, 24 Mar 2022 14:38:01 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/reviews/genius/</guid>
+      <guid>https://vivihoang.me/writing/reviews/genius/</guid>
       <description>Do you remember the Animaniacs, the Warner Brothers cartoon that ran from 1993 to 1998 (and that since returned in 2020)? It was an after-school favorite of mine. Funny, wacky, clever and subversive. It turns out those qualities still ring true with me. I found all of them in Josh Lieb’s I am a Genius of Unspeakable Evil and I Want to Be Your Class President. And while this book is geared toward kids, its story resonates with the evil genius in us all.</description>
     </item>
     
     <item>
       <title>&#39;The Absolutely True Diary of a Part-Time Indian&#39; by Sherman Alexie</title>
-      <link>https://vivi-hoang.github.io/writing/reviews/part-time-indian/</link>
+      <link>https://vivihoang.me/writing/reviews/part-time-indian/</link>
       <pubDate>Thu, 24 Mar 2022 14:20:02 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/reviews/part-time-indian/</guid>
+      <guid>https://vivihoang.me/writing/reviews/part-time-indian/</guid>
       <description>I finally got around to reading Sherman Alexie&amp;rsquo;s The Absolutely True Diary of a Part-Time Indian. It won the National Book Award for Young People&amp;rsquo;s Literature back in 2007 and I&amp;rsquo;ve been hearing fantastic things about it ever since.
 The narrator of the tale, Junior, is now quite possibly one of my favorite characters. Ever. He will break your heart with his story even as he leaves you in stitches.</description>
     </item>
     
     <item>
       <title>&#39;American Vampire&#39; by Scott Snyder</title>
-      <link>https://vivi-hoang.github.io/writing/reviews/american-vampire/</link>
+      <link>https://vivihoang.me/writing/reviews/american-vampire/</link>
       <pubDate>Thu, 24 Mar 2022 14:11:51 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/reviews/american-vampire/</guid>
+      <guid>https://vivihoang.me/writing/reviews/american-vampire/</guid>
       <description>If you&amp;rsquo;re of the school of thought that vampires should be neither sparkly nor mushy-hearted toward humans — that they should be depicted, instead, as stone-cold killers with moral compasses of dubious quality, then Scott Snyder&amp;rsquo;s American Vampire graphic novel series may be right up your blood-stained alley.
 Volume 1 follows two separate storylines linked by one Skinner Sweet, a rabble rousing, blood drinking, candy chomping member of Vampire Version 2.</description>
     </item>
     
     <item>
       <title>&#39;Londoners&#39; by Craig Taylor</title>
-      <link>https://vivi-hoang.github.io/writing/reviews/londoners/</link>
+      <link>https://vivihoang.me/writing/reviews/londoners/</link>
       <pubDate>Thu, 24 Mar 2022 13:30:50 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/writing/reviews/londoners/</guid>
+      <guid>https://vivihoang.me/writing/reviews/londoners/</guid>
       <description>In keeping with my U.K. kick started with Robert Galbraith&amp;rsquo;s The Cuckoo&amp;rsquo;s Calling, which features a careworn private eye in London, I mixed in the nonfiction book Londoners: The days and nights of London now—as told by those who love it, hate it, live it, left it, and long for it.
 Over the course of five years, author Craig Taylor, a Canadian who moved to London, collected stories from 200 people in or from his adopted city.</description>
     </item>
     
     <item>
       <title>Test Post #1</title>
-      <link>https://vivi-hoang.github.io/posts/test-post/</link>
+      <link>https://vivihoang.me/posts/test-post/</link>
       <pubDate>Wed, 23 Mar 2022 15:43:52 -0700</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/test-post/</guid>
+      <guid>https://vivihoang.me/posts/test-post/</guid>
       <description>&amp;ldquo;Back View of a Woman Sitting on a Bench&amp;rdquo; by Yuri Yuhara
   Ipsum labore anim labore dolor mollit aliquip amet sint est elit do. Ea velit occaecat magna non. Sunt ea veniam commodo ea laboris consequat mollit fugiat. Officia in id dolor ex.
 Ut exercitation sint ad esse eu dolor mollit. Amet labore non nisi mollit dolor. Et aute minim enim ut cillum cupidatat id. Incididunt officia labore nisi aliquip magna aliqua.</description>
@@ -202,83 +193,83 @@ Ut exercitation sint ad esse eu dolor mollit. Amet labore non nisi mollit dolor.
     
     <item>
       <title>About</title>
-      <link>https://vivi-hoang.github.io/about/</link>
+      <link>https://vivihoang.me/about/</link>
       <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/about/</guid>
+      <guid>https://vivihoang.me/about/</guid>
       <description>Welcome to my site! I&amp;rsquo;m Vivi Hoang, pronounced &amp;ldquo;Vee-vee Hwong.&amp;rdquo;
 I like to follow my curiosity where it leads me. It&amp;rsquo;s taken me to Washington State, West Michigan, West Texas, Houston, Nashville and Japan. I&amp;rsquo;ve shifted course numerous times and while it&amp;rsquo;s always hard being a beginner again, each new role has been an adventure and enabled me to further add to my toolset and connect with the community in different ways.</description>
     </item>
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>https://vivi-hoang.github.io/posts/markdown-syntax/</link>
+      <link>https://vivihoang.me/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/markdown-syntax/</guid>
+      <guid>https://vivihoang.me/posts/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rich Content</title>
-      <link>https://vivi-hoang.github.io/posts/rich-content/</link>
+      <link>https://vivihoang.me/posts/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/rich-content/</guid>
+      <guid>https://vivihoang.me/posts/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>More Rich Content</title>
-      <link>https://vivi-hoang.github.io/posts/more-rich-content/</link>
+      <link>https://vivihoang.me/posts/more-rich-content/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/more-rich-content/</guid>
+      <guid>https://vivihoang.me/posts/more-rich-content/</guid>
       <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://vivi-hoang.github.io/posts/placeholder-text/</link>
+      <link>https://vivihoang.me/posts/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/placeholder-text/</guid>
+      <guid>https://vivihoang.me/posts/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Math Typesetting</title>
-      <link>https://vivi-hoang.github.io/posts/math-typesetting/</link>
+      <link>https://vivihoang.me/posts/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/math-typesetting/</guid>
+      <guid>https://vivihoang.me/posts/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji Support</title>
-      <link>https://vivi-hoang.github.io/posts/emoji-support/</link>
+      <link>https://vivihoang.me/posts/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/emoji-support/</guid>
+      <guid>https://vivihoang.me/posts/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>External Page: Hugo Coder Wiki</title>
-      <link>https://vivi-hoang.github.io/posts/hugo-coder-wiki/</link>
+      <link>https://vivihoang.me/posts/hugo-coder-wiki/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/posts/hugo-coder-wiki/</guid>
+      <guid>https://vivihoang.me/posts/hugo-coder-wiki/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://vivi-hoang.github.io/contact/</link>
+      <link>https://vivihoang.me/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vivi-hoang.github.io/contact/</guid>
+      <guid>https://vivihoang.me/contact/</guid>
       <description> Name:
   Email:
   Message:
