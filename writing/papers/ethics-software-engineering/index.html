@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta name="robots" content="noindex">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Vivi Hoang">
+    <meta name="description" content="By Vivi Hoang
+Dec. 10, 2021
+The fields of computer science and library and information science (LIS) have the capacity to learn a great deal from each other. Libraries grapple with budget issues while endeavoring to adequately serve their communities’ intellectual and practical needs. To better fulfill their mission and meet their patrons where they are, libraries have turned to digital products and services produced by software engineering professionals.
+However, sometimes the aims of the two professions can conflict.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Ethics of Software Engineering from the Lens of Library Science"/>
+<meta name="twitter:description" content="By Vivi Hoang
+Dec. 10, 2021
+The fields of computer science and library and information science (LIS) have the capacity to learn a great deal from each other. Libraries grapple with budget issues while endeavoring to adequately serve their communities’ intellectual and practical needs. To better fulfill their mission and meet their patrons where they are, libraries have turned to digital products and services produced by software engineering professionals.
+However, sometimes the aims of the two professions can conflict."/>
+
+    <meta property="og:title" content="The Ethics of Software Engineering from the Lens of Library Science" />
+<meta property="og:description" content="By Vivi Hoang
+Dec. 10, 2021
+The fields of computer science and library and information science (LIS) have the capacity to learn a great deal from each other. Libraries grapple with budget issues while endeavoring to adequately serve their communities’ intellectual and practical needs. To better fulfill their mission and meet their patrons where they are, libraries have turned to digital products and services produced by software engineering professionals.
+However, sometimes the aims of the two professions can conflict." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vivi-hoang.github.io/writing/papers/ethics-software-engineering/" /><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2022-03-28T13:46:52-07:00" />
+<meta property="article:modified_time" content="2022-03-28T13:46:52-07:00" />
+
+
+
+    <title>
+  The Ethics of Software Engineering from the Lens of Library Science · Vivi Hoang
+</title>
+
+    
+      <link rel="canonical" href="https://vivi-hoang.github.io/writing/papers/ethics-software-engineering/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.9a3feeefe4fab5f185a31ada001c84fd2b1c518cfc69f9ec83f32053c56e47dd.css" integrity="sha256-mj/u7&#43;T6tfGFoxraAByE/SscUYz8afnsg/MgU8VuR90=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.95.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Vivi Hoang
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/background/">Background</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/writing/">Writing</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://vivi-hoang.github.io/writing/papers/ethics-software-engineering/">
+          The Ethics of Software Engineering from the Lens of Library Science
+        </a>
+      </h1>
+    </header>
+
+    <p>By Vivi Hoang<br>
+Dec. 10, 2021</p>
+<p>The fields of computer science and library and information science (LIS) have the capacity to learn a great deal from each other. Libraries grapple with budget issues while endeavoring to adequately serve their communities’ intellectual and practical needs. To better fulfill their mission and meet their patrons where they are, libraries have turned to digital products and services produced by software engineering professionals.</p>
+<p>However, sometimes the aims of the two professions can conflict. For example, librarianship’s ingrained code of ethics places great import on patrons’ privacy and confidentiality. In this era of Big Data and automated collection of massive amounts of data — much of it made possible by computer science — that often puts libraries at odds with the software they’re using.</p>
+<p>From that perspective, this paper seeks to gain a better understanding of the ethics of software engineering by examining snapshots of its current state and ideas for its future. Software engineering has become woven into the everyday interactions of not just library routines but daily life, which means its impact is widespread.</p>
+<p>&ldquo;As a result, the existence and observance of rules of conduct and clear sanctions in the event of non-compliance are imperative,&rdquo; writes Marcu et al.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="lis-core-values">
+  LIS core values
+  <a class="heading-link" href="#lis-core-values">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>For context, the core values of the librarianship profession, based on a survey of writings about the topic, have generally been categorized as:</p>
+<ul>
+<li>Intellectual freedom</li>
+<li>Protecting patrons’ privacy and confidentiality</li>
+<li>Intellectual property rights</li>
+<li>Professional neutrality</li>
+<li>Preservation of the cultural record</li>
+<li>Equity of access<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+</ul>
+<p>The American Library Association further codifies these principles in its Code of Ethics, which was most recently updated in 2021 to add a commitment to racial and social justice. This adjustment reflects what Wallace C. Koehler Jr., former director of the information studies department of Georgia’s Valdosta State University, described as an inherent quality of ethics, that they are capable of adaptation to the times:</p>
+<p>&ldquo;Ethics necessarily, at least in their applied form, undergo metamorphosis as underlying conditions change. Thus, for example, as technology changes the conditions of practice, these change the ethics that guide the practice.&rdquo;<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<h2 id="one-blended-perspective">
+  One blended perspective
+  <a class="heading-link" href="#one-blended-perspective">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Kalev Leetaru, Google Developer Expert with a background in both computer science and LIS, writes that a primary difference between the two fields lies in how they both view the role and treatment of data:</p>
+<p>The study of computer science examines how data can be collected, mined and manipulated in a way that, in turn, affects users. On the other hand, the study of library and information science underscores the needs of the community and protection of privacy and civil liberties, &ldquo;blending discussion of public data management with private data minimization.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>He describes how, as a computer science student, his area of study explored what could be done with data while failing to devote similar attention to what should be done with data. It didn’t consider the question if an innovation might not be worth the cost due to societal harm. Students learned to protect data but not necessarily the users from which that data derived.</p>
+<p>Leetaru later enrolled in an LIS doctoral program where, from the start, questions of impact, harm and ethics were considered. But that perspective, too, is changing, he noted, as LIS schools align themselves more with computer science.</p>
+<p>&ldquo;Sadly, as Library and Information Science schools pivot into iSchools and hire waves of computer scientists, the scholarly traditions of the community-centric human focus of LIS are giving way to the data-driven technical focus of computer science.&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<h2 id="the-dilemma-of-data-collection">
+  The dilemma of data collection
+  <a class="heading-link" href="#the-dilemma-of-data-collection">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>That data-driven focus has certainly manifested in institutions of higher education, which have had to collect increasing amounts of student data in response to stricter federal accountability measures requiring proof that students are learning. Often these numbers are tied to state and federal fundings.</p>
+<p>These vast caches of student data have proven irresistible to bad actors, leading to the breaches of at least 14 million records accessed in 727 instances between the years 2005 and 2014 at numerous educational institutions and education-related nonprofits.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<p>Academic libraries are having to consider the ethical ramifications. They, too, need to collect user data to justify their budgets.</p>
+<p>Beyond the possibility of stolen records, academic librarians find themselves having to protect their patrons’ privacy. For instance, academic libraries rely on a great deal of third-party vendors for their research databases and other online services. These concerns are typically addressed in the licensing terms but it highlights the divergence of interest: It’s in the interest of these vendors to collect as much data as they can &ldquo;for their own profit and assessment purposes&rdquo; while it’s the libraries’ duty to manage and minimize patron data collection.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<p>One example of this conflict arose in 2016: Librarians castigated Adobe Digital Editions, which is often used for ebook lending by academic libraries, when it was discovered that the software was covertly and rampantly collecting user data, both from the book download and from users’ computers.</p>
+<p>At the same time, libraries have had to accept that the collection of personally identifiable information for assessment purposes is the reality. The American Library Association went so far to update its code of ethics to acknowledge that balancing act between privacy and access in 2006.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<h2 id="ethics-at-the-university-professional-and-employer-level">
+  Ethics at the university, professional and employer level
+  <a class="heading-link" href="#ethics-at-the-university-professional-and-employer-level">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Given those circumstances, we shift over to the computer science side of this equation and explore from where software engineers derive their ethics.</p>
+<p>At the university level, one survey published this year of 61 European academic institutions of higher education showed 64% of them taught ethics in their program.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> (I was unable to find a similar survey of American schools.)</p>
+<p>Of course, not all software engineers have computer science degrees. In the popular knowledgebase site StackOverflow’s 2020 annual survey of its users, 62 percent of the 51,000 respondents reported they had a degree in computer science, computer engineering or software engineering.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
+<p>Computer scientist Graham Lee of the University of Oxford categorized ethical considerations in the field into four areas:</p>
+<ul>
+<li>The software engineer’s actions in their field</li>
+<li>The engineer’s actions in the software’s application domain</li>
+<li>Ethical (or unethical) actions that the software allows users to take</li>
+<li>Bias integrated in, or produced by, the system itself when using artificial intelligence and machine learning.</li>
+</ul>
+<p>Both the ACM (Association for Computing Machinery) and IEEE (Institute of Electrical and Electronics Engineers) each have their own codes of ethics, which primarily deal with the first bullet point, Lee said. But as membership-based groups that means not all software engineers belong to either organization. ACM reports its membership as nearly 100,000 members in 190+ countries<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. IEEE counts 400,000 members in more than 160+ countries.<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></p>
+<p>The next source of ethical rules to consider then are those of employers. Lee reviewed software engineering-specific directives in the codes of conducts for U.S. tech companies (Amazon, Microsoft, Alphabet/Google, Netflix and Apple) and five U.K. universities (Oxford, Cambridge, Warwick, Bristol and Southhampton).</p>
+<p>Among the U.S. tech companies’ codes of conduct, they agreed on four points:</p>
+<ul>
+<li>Avoiding conflicts of interest</li>
+<li>Reporting ethical misconduct</li>
+<li>Following a set of rules to report misconduct</li>
+<li>Not punishing those who report misconduct</li>
+</ul>
+<p>What was conspicuously absent, Lee noted, was any substantial mention of the societal impact of the software these companies.</p>
+<p>&ldquo;The conclusion we draw from this observation is that the codes of conduct for these large corporations do not demonstrate their executives’ commitment to using the special computing knowledge of their professional employees for the public good. The codes of ethics demonstrate that the employees have been told not to violate relevant corporate law and Securities and Exchange Commission rules.&rdquo;<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></p>
+<p>The universities’ code of ethics all required that researchers &ldquo;be aware of the codes of ethics relevant to their domain, and those of professional societies in those domains&rdquo; and generally stipulated honesty, accuracy and transparency. None, however, explicitly outlined ethical expectations in the context of research software.</p>
+<p>Lee concluded that his research, while admittedly limited in sample size, raised the question of an &ldquo;ethics gap&rdquo; in software engineering. He urged further study on whether current best practices in the field raised ethical issues and whether (or what) adjustments could close the gap.<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup></p>
+<h2 id="proposed-solutions">
+  Proposed solutions
+  <a class="heading-link" href="#proposed-solutions">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="pedagogical-frameworks-at-the-university-level">
+  Pedagogical frameworks at the university level
+  <a class="heading-link" href="#pedagogical-frameworks-at-the-university-level">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>One curriculum framework for teaching ethics and social impact to computer science students from 1997 divided the subject into five areas:</p>
+<ul>
+<li>Responsibility of the Computer Professional: The history of computer science and an overview of ethics, including professional codes of conduct.</li>
+<li>Basic Elements of Ethical Analysis: How to think critically about ethics and incorporate it in decision-making.</li>
+<li>Basic Skills of Ethical Analysis: Determining the stakeholders and ethical issues in concrete situations, applying ethics to the situation and considering alternative paths of action.</li>
+<li>Basic Elements of Social Analysis: Taking the social context, power relations and values of software engineering into consideration.</li>
+<li>Basic Skills of Social Analysis: Analyzing the social context of the application domain, including the system’s assumptions and values, and being able to evaluate the implementation.</li>
+</ul>
+<p>&ldquo;If only one strategy is possible, the integration of social and ethical issues into existing courses is the preferable option because it helps the student to understand the connection that exists between technical, ethical and social problems,&rdquo; writes the researchers.<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup></p>
+<p>Faculty at Uppsala University in Sweden released a paper last year discussing how at some point, even though there were no complaints from students, the school realized it wasn’t adequately serving the needs of their engineering and computer science students with their existing ethics course.</p>
+<p>&ldquo;[P]erhaps the best way to put it in hindsight, is that we taught courses about engineering ethics, rather than courses for engineering ethics.&rdquo;<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup></p>
+<p>They revamped their curriculum, focusing on awareness, responsibility, critical thinking and action.</p>
+<p>The awareness portion covers the ethics of dealing with the product but also with people, as well as addresses private life, since modern-day practices have blurred the lines between work and home. In this area, awareness, the authors point out how students often assume if they’re working in what could be considered a &ldquo;good&rdquo; tech field, such as sustainability, there will not be ethical issues with the product. No matter the area of specialization, there’s no guarantee, but at the very least, students will still need to think about their relationships with others.</p>
+<p>While the curriculum does address engineering disasters, the authors note those disasters can seem so far removed, so there’s also an emphasis on ethical issues that arise in the day-to-day work. The course seeks to provide both positive and negative examples so students see a spectrum of experiences based on engineers’ choices.</p>
+<p>The responsibility portion encourages students to consider the conditions for taking action — &ldquo;Is this an issue that I should do something about?&rdquo; — rather than focusing on accountability or liability. This is followed by a discussion on common reasons for avoiding responsibility, such as the different kinds of rationalization (such as denial of harm, blaming the victim, etc.).</p>
+<p>&ldquo;We implicitly try to avoid the all too easy ‘collective responsibility’ view, and point out that by assessing professional, as well as personal, responsibilities at every critical decision point, we can understand the nuances of a situation in much greater detail, and thereby move towards judgement.&rdquo;<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup></p>
+<p>The critical thinking phase deals in analyzing options and making the right choice. Students get two scenarios to apply what they’ve learned: Designing an algorithm for self-driving cars to handle accidents and choosing how to store used nuclear fuel.</p>
+<p>Finally, when covering the action phase, students, choose how to proceed but also get a roadmap on long-term ethical conduct.</p>
+<h3 id="ethics-aware-software-engineering">
+  Ethics-aware software engineering
+  <a class="heading-link" href="#ethics-aware-software-engineering">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Two researchers from Utrecht University in The Netherlands observed in 2018 that consumers are increasingly concerned about the ethical cost of products — such as fair labor, working conditions, sustainability and health impact — and that these same questions should be applied to software.</p>
+<p>These factors include a number that coincide with the LIS values discussed earlier:</p>
+<ul>
+<li>Working conditions of those making the software.</li>
+<li>If the product fostered unhealth behaviors such as digital addition.</li>
+<li>User privacy.</li>
+<li>Diversity.</li>
+<li>Fairness.</li>
+</ul>
+<p>The researchers proposed &ldquo;ethics-aware software engineering,&rdquo; a framework applied to everyone involved in the creation of software — generally termed &ldquo;software professionals&rdquo; and including customers, developers and organizations — that integrates ethical discussions through each phase of the software process.</p>
+<p>The process, which the researchers admit is a work in progress, starts with ethics requirements, in which the different stakeholders articulate their ethical values for the software and the development process. These values are translated to specifications such as, for example, &ldquo;the system shall be gender-neutral.&rdquo; This leads to the ethical specifications being implemented, verified and validated.<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup></p>
+<p>&ldquo;Our goal is to foster the community to ﬁll the existing gaps: current codes of conducts lack of breadth and depth, there are no languages for stakeholders to express their ethical standpoints, and software organizations do not reveal details on ethical issues. As a result, it is practically impossible for a human to check her/his ethical alignment with a given software product or its producing organization. Notably, we do not try to promote one or another ethical concern; our main aim is to support transparency.&rdquo;<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup></p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>In closing, the ethics and expectations of both computer science and library and information science continue to evolve, at times colliding and possibly, with time, converging. Researchers point to the need to better harness the capabilities of software engineering so as not to cause harm to their users or to society. Instilling these values is a task that has the potential to be addressed from various sources in the industry, including educational institutions, professional groups and employers.</p>
+<!-- raw HTML omitted -->
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Marcu, D., Milici, D., &amp; Danabianu, M. (2020, December). Software Engineering Ethics.
+<em>Postmodern Openings</em>, 11(4), 248-261. <a href="https://doi.org/10.18662/po/11.4/233">https://doi.org/10.18662/po/11.4/233</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Koehler, W. (2003). Professional Values and Ethics as Defined by &ldquo;The LIS Discipline&rdquo;.
+<em>Journal of Education for Library and Information Science</em>, 99-119. <a href="https://doi.org/10.2307/40323926">https://doi.org/10.2307/40323926</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Leetaru, K. (2019, August 5). Computer Science Could Learn A Lot From Library And
+Information Science. <em>Forbes</em>. <a href="https://www.forbes.com/sites/kalevleetaru/2019/08/05/computer-science-could-learn-a-lot-from-library-and-information-science/?sh=10cb3d87587d">https://www.forbes.com/sites/kalevleetaru/2019/08/05/computer-science-could-learn-a-lot-from-library-and-information-science/?sh=10cb3d87587d</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Prindle, A., &amp; Loos, A. (2017). Information Ethics and Academic Libraries: Data Privacy in
+the Era of Big Data. <em>Journal of Information Ethics</em>, 26(2), 22-33.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Stavrakakis, I., Gordon, D., Tierney, B., Becevel, A., Murphy, E., Dodig-Crnkovic, G., …
+O&rsquo;Sullivan, D. (2021). The teaching of computer ethics on computer science. <em>International Journal of Ethics Education</em>, 1. <a href="https://doi.org/10.1007/s40889-021-00135-1">https://doi.org/10.1007/s40889-021-00135-1</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Stack Overflow. (2020, May 27). 2020 Developers Survey. <em>Stack Overflow</em>.
+<a href="https://insights.stackoverflow.com/survey/2020">https://insights.stackoverflow.com/survey/2020</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>ACM at a Glance. (n.d.). <em>ACM</em>. <a href="https://www.acm.org/membership/acm-at-a-glance">https://www.acm.org/membership/acm-at-a-glance</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>IEEE at a Glance. (2021, April). <em>IEEE</em>. <a href="https://www.ieee.org/about/at-a-glance.html">https://www.ieee.org/about/at-a-glance.html</a>&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Lee, G. (2021). Is there a “software engineering ethics”? Comparing commercial and
+research software engineering. <em>2021 IEEE/ACM 2nd International Workshop on Ethics in Software Engineering Research and Practice (SEthics)</em>, (pp. 13-17).
+<a href="https://doi.org/10.1109/SEthics52569.2021.00010">https://doi.org/10.1109/SEthics52569.2021.00010</a>&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>Lee, 2021&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Martin, C., &amp; Huff, C. (1997). A Conceptual and Pedagogical Framework for Teaching
+Ethic and Social Impact in Computer Science. <em>Proceedings Frontiers in Education 1997 27th Annual Conference. Teaching and Learning in an Era of Change, Frontiers in Education Conference, 1997</em>, (pp. 479-483). <a href="https://doi.org/10.1109/FIE.1997.644929">https://doi.org/10.1109/FIE.1997.644929</a>&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p>Lennerfors, T., Laaksoharju, M., Davis, M., Birch, P., &amp; Fors, P. (2020). A Pragmatic
+Approach for Teaching Ethics to Engineers and Computer Scientists. <em>2020 IEEE
+Frontiers in Education Conference (FIE), Frontiers in Education Conference (FIE)</em>, (pp.
+1-9). <a href="https://doi.org/10.1109/FIE44824.2020.9274029">https://doi.org/10.1109/FIE44824.2020.9274029</a>&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p>Aydemir, F., &amp; Dalpiaz, F. (2018). A Roadmap for Ethics-Aware Software Engineering.
+<em>2018 ACM/IEEE International Workshop on Software Fairness</em>, (pp. 15-21). <a href="https://doi.org/10.1145/3194770.3194778">https://doi.org/10.1145/3194770.3194778</a>&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta name="robots" content="noindex">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Vivi Hoang">
+    <meta name="description" content="By Vivi Hoang
+Dec. 10, 2021
+Software, as a product of human design, by its very nature has our human worldviews encoded into it, whether intentionally or unintentionally. Artificial intelligence (AI) further plays out that facet of the system context, such as in the AI subfield of machine learning, in which algorithms evolve and adapt based on insights gleaned from large datasets.
+By now, this spectrum of automation pervades our everyday lives.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Algorithmic Bias in Software Design and AI"/>
+<meta name="twitter:description" content="By Vivi Hoang
+Dec. 10, 2021
+Software, as a product of human design, by its very nature has our human worldviews encoded into it, whether intentionally or unintentionally. Artificial intelligence (AI) further plays out that facet of the system context, such as in the AI subfield of machine learning, in which algorithms evolve and adapt based on insights gleaned from large datasets.
+By now, this spectrum of automation pervades our everyday lives."/>
+
+    <meta property="og:title" content="Algorithmic Bias in Software Design and AI" />
+<meta property="og:description" content="By Vivi Hoang
+Dec. 10, 2021
+Software, as a product of human design, by its very nature has our human worldviews encoded into it, whether intentionally or unintentionally. Artificial intelligence (AI) further plays out that facet of the system context, such as in the AI subfield of machine learning, in which algorithms evolve and adapt based on insights gleaned from large datasets.
+By now, this spectrum of automation pervades our everyday lives." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vivi-hoang.github.io/writing/papers/bias-in-software-design/" /><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2022-03-28T10:09:14-07:00" />
+<meta property="article:modified_time" content="2022-03-28T10:09:14-07:00" />
+
+
+
+    <title>
+  Algorithmic Bias in Software Design and AI · Vivi Hoang
+</title>
+
+    
+      <link rel="canonical" href="https://vivi-hoang.github.io/writing/papers/bias-in-software-design/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.9a3feeefe4fab5f185a31ada001c84fd2b1c518cfc69f9ec83f32053c56e47dd.css" integrity="sha256-mj/u7&#43;T6tfGFoxraAByE/SscUYz8afnsg/MgU8VuR90=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.95.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Vivi Hoang
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/background/">Background</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/writing/">Writing</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://vivi-hoang.github.io/writing/papers/bias-in-software-design/">
+          Algorithmic Bias in Software Design and AI
+        </a>
+      </h1>
+    </header>
+
+    <p>By Vivi Hoang<br>
+Dec. 10, 2021</p>
+<p>Software, as a product of human design, by its very nature has our human worldviews encoded into it, whether intentionally or unintentionally. Artificial intelligence (AI) further plays out that facet of the system context, such as in the AI subfield of machine learning, in which algorithms evolve and adapt based on insights gleaned from large datasets.</p>
+<p>By now, this spectrum of automation pervades our everyday lives. But the tech industry gravitates toward releasing products as quickly as possible, typically without thinking through possible ethical and societal ramifications.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>One resulting risk is the automation of bias: As a consequence of the widespread use of algorithms, bias has been shown to manifest in countless areas with real-world consequences, including criminal justice, education, employment, healthcare, housing and certainly social media.</p>
+<p>Many of these industries incorporate these tools &ldquo;with the promise that algorithmic decisions are less biased than their human counterpart,&rdquo; writes Princeton sociologist and Ida B. Wells Just Data Lab founder Ruha Benjamin. &ldquo;But human decisions comprise the data and shape the design of algorithms, now hidden by the promise of neutrality and with the power to unjustly discriminate at a much larger scale than biased individuals.&rdquo;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>This paper examines contributing factors to algorithmic bias; considerations to take during the software design process; mitigation methods and recent examples of algorithmic bias and their impact in a variety of sectors.</p>
+<h2 id="an-academic-example">
+  An academic example
+  <a class="heading-link" href="#an-academic-example">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Algorithmic bias arises when issues with a computer system, including errors and false assumptions, lead to unfair outcomes that favor one arbitrary group over another.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>&ldquo;Algorithms are part of existing (biased) institutions and structures, but they may also amplify or introduce bias as they favor those phenomena and aspects of human behavior that are easily quantifiable over those which are hard or even impossible to measure,&rdquo; wrote Ntoutsi, et al., in a 2020 paper.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>For instance, from 2013 to 2019, the University of Texas at Austin’s computer science department relied on a machine-learning system to help winnow down PhD applicants. A faculty member and a graduate student from the department developed the system, called GRADE (GRaduate ADmissions Evaluator), to reduce the amount of time required of reviewers.</p>
+<p>In that, the system succeeded, cutting reviewers’ time commitment by 74%.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> In particular, it freed up reviewers to devote more time to candidates on the borderline of acceptance or rejection, especially as the number of applications grew from about 250 in 2000 to more than 1,200 after 2012.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<p>For each applicant, the system provided reviewers with a numerical score out of five along with an explanation of factors supporting that score. For example, applicants with higher GPAs and from prestigious undergraduate alma maters scored higher. Letters of recommendation containing keywords like &ldquo;best,&rdquo; &ldquo;award&rdquo; and &ldquo;research&rdquo; scored higher than those with &ldquo;good,&rdquo; &ldquo;programming&rdquo; or &ldquo;technology.&rdquo;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<p>Critics of this approach countered that the system could undervalue women’s colleges and historically Black universities, nor take gender bias into consideration when evaluating letters of evaluation, since different language is often used to describe female students than male students.</p>
+<p>&ldquo;If I ask you to do a classifier of images and you’re looking for dogs, I can check afterwards that, yes, it did correctly identify dogs,&rdquo; said Steve Rolston, chair of the University of Maryland at College Park’s physics department during a 2020 colloquium talk with the GRADE creators. &ldquo;But when I’m asking for decisions about people, whether it&rsquo;s graduate admissions, or hiring or prison sentencing, there’s no obvious correct answer. You train it, but you don’t know what the result is really telling you.&rdquo;</p>
+<p>The University of Texas phased out GRADE’s use in 2020 (before the controversy was raised later that year), citing that it was &ldquo;too difficult to maintain&rdquo; due to &ldquo;changes in the data and software environment.&rdquo;<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<h2 id="contributors-to-algorithmic-bias">
+  Contributors to algorithmic bias
+  <a class="heading-link" href="#contributors-to-algorithmic-bias">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>During the COVID pandemic, machine learning contributed to the development of at least four vaccines that made it to the clinical evaluation stage. AI was used analyze records and medical imagery of COVID patients.</p>
+<p>But researchers from the United Nations and the Université de Montréal still questioned whether using AI would propagate or reduce inequality. They identified possible points of entry for bias during software development and ways to mitigate it.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>Bias, they said, can creep into software at these phases:</p>
+<ul>
+<li>When the problem is framed and scoped. This can be viewed as &ldquo;problem formulation&rdquo; or how the problem to be solved is defined.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></li>
+<li>In the data itself that’s fed into the AI system, especially since &ldquo;Women and minorities are also often not properly represented in data sets whose use may result in medical treatments and services.&rdquo;<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></li>
+<li>When the algorithms are designed, depending on their configuration and parameters.</li>
+<li>he evaluation and interpretation of the results and how they’re used.</li>
+</ul>
+<h2 id="framing-and-scoping-the-problem">
+  Framing and scoping the problem
+  <a class="heading-link" href="#framing-and-scoping-the-problem">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Health researchers in 2019 found that a widely used commercial algorithm that predicts healthcare costs for millions of Americans showed significant racial bias: Black patients with the same risk score as white patients were actually substantially sicker due to health providers spending less on their care.</p>
+<p>The researchers attributed the disparity partly to the way the problem was formulated: on future health-related costs. While the desire to predict that figure isn’t unreasonable — patients with higher future costs probably would benefit the most from receiving additional resources — they’re not the only option. Alternatives include avoidable future costs, like visits to the emergency room, or a general future health score, one based on the patient’s current chronic health conditions.</p>
+<p>The challenge of problem formulation lies in translating &ldquo;an often amorphous concept we wish to predict into a concrete variable that can be predicted in a given dataset.&rdquo;<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></p>
+<p>In this particular case, the researchers suggested merging both health prediction and cost prediction, a more nuanced approach that considered not just a patient’s number of conditions but their severity to prevent underestimation of health risks. Because their study had access to inputs, outputs and eventual patient outcomes, they were able to ascertain that formulating the problem this way resulted in an 84% reduction in bias.<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></p>
+<h2 id="assessing-the-data">
+  Assessing the data
+  <a class="heading-link" href="#assessing-the-data">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>One of the challenges of algorithmic bias is the very data used to train automated systems. On the Internet, this played out in one example of tags associated with professional footballers: A search for male player Lionel Messi showed primary tags related to his professional football career (Argentina, Barcelona and his rival Cristiano Ronaldo) while a search for female player Megan Rapinoe showed tags related primarily to her appearance and family life.</p>
+<p>&ldquo;This is a lucid example of modern-day societal stereotype and how humans perceive them, which is then mistakenly encoded into the Tagging Algorithm,&rdquo; wrote researchers from the Chaitanya Bharathi Institute of Technology in Hyderabad, India. &ldquo;… Biases can be fed into the model through training data, due to either human assumptions while labelling or inadequate sampling.&rdquo;<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup></p>
+<p>Deficient or problematic data crops up when using historic health care records, for instance, since they could be derived from segregated hospital facilities, discriminatory medical practices and curricula and inequitable insurance access.<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup></p>
+<p>The COVID researchers mentioned previously point out that while diagnosis of the coronavirus is possible from computer tomography (CT) and X-ray scans, that’s assuming robust, balanced and representative data sets. Misdiagnosis is possible if the algorithms solely consider medical imagery, particularly in localities that also see a high occurrence of other lung-related conditions. But that data may not always be possible because not all regions have the budget for the proper scanner equipment.<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup></p>
+<h2 id="mitigation-methods">
+  Mitigation methods
+  <a class="heading-link" href="#mitigation-methods">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Researchers have suggested a number of ways to reduce algorithmic bias during software design — though, like any complicated problem, the solutions themselves are nontrivial, particularly when addressing the issue of fairness.</p>
+<p>These recommendations include:</p>
+<ul>
+<li>Design algorithms from the ground up as a way of being explicitly aware of values.<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup></li>
+<li>Run simulations to test algorithm results.<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup></li>
+<li>Random choices that are verifiable.<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup></li>
+<li>Regulate proxy-driven systems.<sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup></li>
+<li>Transparency. Twitter, for example, has taken it upon itself to release such information to the public in the hopes that doing so will help it improve its services. &ldquo;Responsible AI is hard in part because no one understands fully understands decisions made by algorithms,&rdquo; wrote tech journalist Casey Newton of Twitter’s disclosures.<sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup> On the other hand, transparency — specifically in the context of source code — has also been argued against for privacy and security reasons.<sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup></li>
+</ul>
+<p>Below, we’ll delve deeper into a few of these methods.</p>
+<h2 id="reproducible-randomization">
+  Reproducible randomization
+  <a class="heading-link" href="#reproducible-randomization">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>In cases in which an algorithm requires randomization, such as a lottery, there needs to be a way to make the process &ldquo;fully reproducible and reviewable&rdquo; to confirm its fairness. Otherwise, there’s no way to know if automated outputs aren’t random, or perhaps even producing an improperly influenced outcome.</p>
+<p>The challenge here is that it’s difficult to recreate a process that’s been randomized: For example, if its behavior depends on input from its environment, that can make its outputs nondeterministic.</p>
+<p>To address this proactively, the algorithm should be designed from the start with this oversight in mind; it needs to be able to demonstrate that its random choices do not bias its output. To do so, when testing, the software can replace the random choice with a known seed value from which the random values can be generated in a controlled, pseudorandom manner. That way the algorithm can be rerun as long as the seed is known, allowing testers to review and verify the algorithm’s randomness without have to generate a wholly random choice every time the software needs that value.</p>
+<p>&ldquo;;hellip; [T]his technique reduces the relevant portion of the environment to a very small and manageable value (the seed) while preserving the benefits of using randomness in the system,&rdquo; writes Joshua Kroll, a computer scientist at the Naval Postgraduate School in California.<sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup></p>
+<h2 id="the-use-of-proxy-variables">
+  The use of proxy variables
+  <a class="heading-link" href="#the-use-of-proxy-variables">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>It is standard practice for models to use what’s known as proxy variables, which is when the actual value of interest is unobservable, too expensive to measure — or, in the case of attributes such as race or gender, federally not permitted to be a consideration factor, such as in employment — so it’s substituted with a correlating, more easily measurable value.</p>
+<p>But the mainstreaming of proxy-driven analysis has worsened inequity due to poor proxy choices often disconnected from the desired values and how they’re treated without regard to the bigger picture. One hypothetical example provided by a computer scientist and legal scholar pair, Sloan and Warner, was a woman who declares bankruptcy after defaulting on a credit card debt racked up from her daughter’s medical treatment. After the bankruptcy, with her daughter recovered, the woman would be a good credit risk but the bankruptcy remains a black mark on her record, which leads to a poor credit score. Consequently, the insurance company, which uses the credit rating as a proxy for safe driving, raises her auto insurance rates.</p>
+<p>To help mitigate the algorithmic bias that could result from the use of proxies, the researchers propose two regulating conditions. The first is that the system identify &ldquo;before start&rdquo; attributes that unfairly favor one group over another and then not use them in the system. For instance, a system should not penalize individuals who took part in a remedial reading program that was used to ensure all children had the same basic reading abilities.</p>
+<p>The second condition is to build AI systems in a way that recognizes how certain uses of &ldquo;after start&rdquo; attributes could sway the outcome unfairly and to then not use the attribute in that way. They use the bankruptcy example again, comparing the original system that automatically raises the woman’s insurance premiums against another that considers not just the woman’s bankruptcy but other cases like hers to better gauge the circumstances, thus avoiding that same outcome.<sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup></p>
+<h2 id="transparency">
+  Transparency
+  <a class="heading-link" href="#transparency">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Whether algorithms created by artificial intelligence are useful depend on how they’re developed and &ldquo;how transparently their outputs are evaluated.&rdquo;<sup id="fnref:25"><a href="#fn:25" class="footnote-ref" role="doc-noteref">25</a></sup></p>
+<p>One example used to make this point is an AI-driven Twitter chatbot Microsoft released in 2016 called Tay. Tay was designed to interact with and learn from the Twitter community as an experiment in &ldquo;conversational understanding.&rdquo; Though its initial tweets (&ldquo;new phone who dis?&rdquo;) seemed innocuous, within 24 hours, its messages had devolved to reflect the inflammatory content being tweeted at it with its own equally offensive remarks.<sup id="fnref:26"><a href="#fn:26" class="footnote-ref" role="doc-noteref">26</a></sup></p>
+<p>Although Microsoft nor Twitter certainly never intended for Tay to turn into a &ldquo;raving bigot,&rdquo; it could be argued that Tay was performing successfully as a chatbot within the context of its programming.<sup id="fnref:27"><a href="#fn:27" class="footnote-ref" role="doc-noteref">27</a></sup> Within the realm of human evaluation, however, Tay’s performance was clearly a failure: This is largely because Tay’s outputs, its tweets, were directly observable to the public. Had that not been the case — had Tay’s job been relegated in the background to, for example, score tweets for how provocative they were and inadvertently scoring those with abusive content higher — then it would have been much more difficult to detect.<sup id="fnref:28"><a href="#fn:28" class="footnote-ref" role="doc-noteref">28</a></sup></p>
+<p>Twitter itself actually experienced a very similar challenge with nontransparent outputs earlier this year. The social media service, which uses machine learning for its tweet recommendation algorithms, shared in October an analysis showing how their service amplified political content. The company found, among other things, that its algorithms promoted tweets from right-wing politicians and news sources more often than those with left-wing leanings.<sup id="fnref:29"><a href="#fn:29" class="footnote-ref" role="doc-noteref">29</a></sup></p>
+<p>Why this is happening as yet is unclear; Twitter says determining the cause of this inequity is the company’s next step.</p>
+<p>&ldquo;Establishing why these observed patterns occur is a significantly more difficult question to answer as it is a product of the interactions between people and the platform,&rdquo; the company wrote in a blog post. &ldquo;… Algorithmic amplification is problematic if there is preferential treatment as a function of how the algorithm is constructed versus the interactions people have with it.&rdquo;<sup id="fnref:30"><a href="#fn:30" class="footnote-ref" role="doc-noteref">30</a></sup></p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The increasing reliance on algorithmic automation means the greater likelihood of algorithmic bias, which has been shown to have real-world consequences that crop in all areas of life. This makes it not just a software design problem but a human problem, one that researchers, software professionals, governments and companies are seeking to address and fix using a variety of techniques.</p>
+<p>At the same time, the desire to proactively account for algorithmic bias means also acknowledging it a reflection not only of technology but society itself.</p>
+<p>&ldquo;…[B]iases are deeply embedded in our societies and it is an illusion to believe that the AI and bias problem will be eliminated only with technical solutions,&rdquo; wrote Ntousi, etc. al., in a paper about bias in data-driven AI systems. &ldquo;Nevertheless, as the technology reflects and projects our biases into the future, it is a key responsibility of technology creators to understand its limits and to propose safeguards to avoid pitfalls. Of equal importance is also for the technology creators to realize that technical solutions without any social and legal ground cannot thrive and therefore multidisciplinary approaches are required.&rdquo;<sup id="fnref:31"><a href="#fn:31" class="footnote-ref" role="doc-noteref">31</a></sup></p>
+<!-- raw HTML omitted -->
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Miller, C. C. (2015, July 9). When Algorithms Discriminate. <em>The New York Times</em>.
+<a href="https://www.nytimes.com/2015/07/10/upshot/when-algorithms-discriminate.html?unlocked_article_code=AAAAAAAAAAAAAAAACEIPuomT1JKd6J17Vw1cRCfTTMQmqxCdw_PIxftm3iaja3DKDm8aiPkNGIiH5wDSZadlItI30DOBRcNBNaRqSP1pxfVeOk1rQhWl5JuYnZBPawMElbWOZEJklZTcQeJ_tjbwcmiyLOo4yrHg5kvWOmD1C6TVgWkmcw9lvcBvdF61i3ILwf_GELJ3ioF_zu5hUs4hPUoIYiWPuvPjCgwve4nVK0GBtXRlHr1RSjrRntWD6rgfcwQ0ClnOSXN34mxU-8oLcZpMf_65d0h8DZK41bYBCWVoL5OrAokxQeXUlLZsub3Nq3-c2Q1B6Wz2aV_6AeJonyPXRRc&amp;smid=url-share">https://www.nytimes.com/2015/07/10/upshot/when-algorithms-discriminate.html</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Benjamin, R. (2019, October 25). Assessing risk, automating racism: A health care
+algorithm reflects underlying racial bias in society. <em>Science</em>, 366(6464), pp. 421-422. <a href="https://doi.org/10.1126/science.aaz3873">https://doi.org/10.1126/science.aaz3873</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Florida State University Libraries. (2021, September 23). <em>Algorithm Bias</em>. <a href="https://guides.lib.fsu.edu/algorithm">https://guides.lib.fsu.edu/algorithm</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Ntoutsi, E., Fafalios, P., Gadiraju, U., Iosifidis, V., Nejdl, W., Vidal, M., … Broelemann, K. (2020). Bias in data‐driven artificial intelligence systems: An introductory survey.
+<em>WIREs: Data Mining &amp; Knowledge Discovery</em>, 10(3), 1-14. <a href="https://doi.org/10.1002/widm.1356">https://doi.org/10.1002/widm.1356</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Waters, A., &amp; Miikkulainen, R. (2014, March 22). GRADE: Machine Learning Support for
+Graduate Admissions. <em>AI Magazine</em>, 35(1), 64-75. <a href="https://doi.org/10.1609/aimag.v35i1.2504">https://doi.org/10.1609/aimag.v35i1.2504</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Burke, L. (2020, December 14). The Death and Life of an Admissions Algorithm. <em>Inside Higher Ed</em>. <a href="https://www.insidehighered.com/admissions/article/2020/12/14/u-texas-will-stop-using-controversial-algorithm-evaluate-phd">https://www.insidehighered.com/admissions/article/2020/12/14/u-texas-will-stop-using-controversial-algorithm-evaluate-phd</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Waters &amp; Miikkulainen, 2014&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Burke, 2020&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Luengo-Oroz, M., Lam, C., Bullock, B., Luccioni, A., &amp; Pham, K. (2021). From Artificial
+Intelligence Bias to Inequality in the Time of COVID-19. <em>IEEE Technology and
+Society Magazine, Technology and Society Magazine, IEEE, IEEE Technol. Soc. Mag</em>,
+40(1), 71-79. <a href="https://doi.org/10.1109/MTS.2021.3056282">https://doi.org/10.1109/MTS.2021.3056282</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Benjamin, 2019&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>Luengo-Oroz et al., 2021&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>Obemeyer, Z., Powers, B., Vogeli, C., &amp; Mullainathan, S. (2019, October 25). Dissecting
+racial bias in an algorithm used to manage the health of populations. <em>Science</em>, 366(6464), pp. 447-453. <a href="https://doi.org/10.1126/science.aax2342">https://doi.org/10.1126/science.aax2342</a>&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>Ahmed, S., Athyaab, S., &amp; Muqtadeer, S. (2021). Attenuation of Human Bias in Artificial
+Intelligence: An Exploratory Approach. <em>6th International Conference on Inventive Computation Technologies (ICICT)</em>, (pp. 557–563). <a href="https://doi.org/10.1109/ICICT50816.2021.9358507">https://doi.org/10.1109/ICICT50816.2021.9358507</a>&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Benjamin, 2019&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p>Luengo-Oroz et al., 2021&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>Miller, 2015&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p>Miller, 2015&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19" role="doc-endnote">
+<p>Kroll, J., Huey, J., Barocas, S., Felten, E., Reidenberg, J., Robinson, D., &amp; Yu, H. (2017).
+Accountable Algorithms. <em>University of Pennsylvania Law Review</em>, 165(3), 633-706. <a href="https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3">https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3</a>&#160;<a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20" role="doc-endnote">
+<p>Sloan, R., &amp; Warner, R. (2020). Beyond Bias: Artificial Intelligence and Social Justice.
+<em>Virginia Journal of Law &amp; Technology</em>, 24(1), 1-32. <a href="https://dx.doi.org/10.2139/ssrn.3530090">https://dx.doi.org/10.2139/ssrn.3530090</a>&#160;<a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21" role="doc-endnote">
+<p>Newton, C. (2021, November 19). How Twitter got research right: While other tech
+giants hide from their researchers. <em>The Verge</em>. <a href="https://www.theverge.com/2021/11/19/22790174/twitter-research-transparency-published-findings">https://www.theverge.com/2021/11/19/22790174/twitter-research-transparency-published-findings</a>&#160;<a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22" role="doc-endnote">
+<p>Kroll, et al., 2016&#160;<a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23" role="doc-endnote">
+<p>Kroll, et al., 2016&#160;<a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:24" role="doc-endnote">
+<p>Sloan &amp; Warner, 2020&#160;<a href="#fnref:24" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:25" role="doc-endnote">
+<p>Omar, R. (2021). Unabashed Bias: How Health-Care Organizations Can Significantly
+Reduce Bias in the Face of Unaccountable AI. <em>Denver Law Review</em>, 98(4), 807-837.&#160;<a href="#fnref:25" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:26" role="doc-endnote">
+<p>Vincent, J. (2016, March 24). Twitter taught Microsoft’s AI chatbot to be a racist asshole
+in less than a day. <em>The Verge</em>. <a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist</a>&#160;<a href="#fnref:26" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:27" role="doc-endnote">
+<p>Omar, 2021&#160;<a href="#fnref:27" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:28" role="doc-endnote">
+<p>Omar, 2021&#160;<a href="#fnref:28" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:29" role="doc-endnote">
+<p>Chowdhury, R., &amp; Belli, L. (2021, October 21). Examining algorithmic amplification of
+political content on Twitter. <a href="https://blog.twitter.com/en_us/topics/company/2021/rml-politicalcontent">https://blog.twitter.com/en_us/topics/company/2021/rml-politicalcontent</a>&#160;<a href="#fnref:29" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:30" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:30" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:31" role="doc-endnote">
+<p>Ntoutsi, et al., 2020&#160;<a href="#fnref:31" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

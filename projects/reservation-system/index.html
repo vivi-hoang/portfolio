@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta name="robots" content="noindex">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Vivi Hoang">
+    <meta name="description" content="GitHub repoThis project focused on creating an app that would allow public libraries to show book clubs what titles they offer as kits and allow people to reserve kits for specific periods up to a year in advance.
+ Why I chose this project Software design process  Initiation Planning Execution Technical details   Challenges faced  JSON object construction   Lessons learned Future development ideas  Why I chose this project    Public libraries commonly bundle together multiple copies of the same book, along with a discussion guide, into kits targeted toward local book clubs.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Book Club Kit Reservation System"/>
+<meta name="twitter:description" content="Vivi Hoang&#39;s portfolio"/>
+
+    <meta property="og:title" content="Book Club Kit Reservation System" />
+<meta property="og:description" content="Vivi Hoang&#39;s portfolio" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vivi-hoang.github.io/projects/reservation-system/" />
+
+
+
+    <title>
+  Book Club Kit Reservation System · Vivi Hoang
+</title>
+
+    
+      <link rel="canonical" href="https://vivi-hoang.github.io/projects/reservation-system/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.9a3feeefe4fab5f185a31ada001c84fd2b1c518cfc69f9ec83f32053c56e47dd.css" integrity="sha256-mj/u7&#43;T6tfGFoxraAByE/SscUYz8afnsg/MgU8VuR90=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <link rel="alternate" type="application/rss+xml" href="/projects/reservation-system/index.xml" title="Vivi Hoang" />
+    <meta name="generator" content="Hugo 0.95.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Vivi Hoang
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/background/">Background</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/writing/">Writing</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://vivi-hoang.github.io/projects/reservation-system/">
+          Book Club Kit Reservation System
+        </a>
+      </h1>
+    </header>
+
+    <p>
+
+    <i class="fa fa-github-square fa" aria-hidden="true"></i> <a href="https://github.com/vivi-hoang/book-club-kits">GitHub repo</a
+<!-- raw HTML omitted --></p>
+<p>This project focused on creating an app that would allow public libraries to show book clubs what titles they offer as kits and allow people to reserve kits for specific periods up to a year in advance.</p>
+<ul>
+<li><a href="#why-i-chose-this-project">Why I chose this project</a></li>
+<li><a href="#software-design-process">Software design process</a>
+<ul>
+<li><a href="#initiation">Initiation</a></li>
+<li><a href="#planning">Planning</a></li>
+<li><a href="#execution">Execution</a></li>
+<li><a href="#technical-details">Technical details</a></li>
+</ul>
+</li>
+<li><a href="#challenges-faced">Challenges faced</a>
+<ul>
+<li><a href="#json-object-construction">JSON object construction</a></li>
+</ul>
+</li>
+<li><a href="#lessons-learned">Lessons learned</a></li>
+<li><a href="#future-development-ideas">Future development ideas</a></li>
+</ul>
+<h2 id="why-i-chose-this-project">
+  Why I chose this project
+  <a class="heading-link" href="#why-i-chose-this-project">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Public libraries commonly bundle together multiple copies of the same book, along with a discussion guide, into kits targeted toward local book clubs. This type of offering doesn’t integrate well with existing library catalogs: In the catalog, when patrons put a hold on an item, they must wait their turn in the queue. So when, exactly, the patron will get that item is uncertain.</p>
+<p>This conflicts with the book clubs&rsquo; operate. Club members need those books in the period leading up to the date they&rsquo;ve scheduled to discuss that title.</p>
+<p>In addition, libraries have few options when it comes to reservation software for managing kits,There&rsquo;s only one vendor I know who specifically offers kit reservation software for public libraries.</p>
+<p>For my project, I built my own basic version to better understand the workflows required for a system like this. The app has different interfaces for patrons and staff members: Patrons can view their library’s book club kits and availability as well as place reservations up to a year in advance for the set checkout period (in this case, three weeks). When logged in, patrons can also see a record of their past and current reservations. Staff can create records for new book club kits. They can view, search and filter through all kit records and patron reservations.</p>
+<h2 id="software-design-process">
+  Software design process
+  <a class="heading-link" href="#software-design-process">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="initiation">
+  Initiation
+  <a class="heading-link" href="#initiation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>I first met with a public library colleague who deals with the library&rsquo;s book club kits to discuss the state of kit-related software in the library sphere. This is where I learned how there&rsquo;s really only one vendor who specifically offers kit reservation software (whether for book clubs kits or items packaged together for other purposes) for public libraries.</p>
+<h3 id="planning">
+  Planning
+  <a class="heading-link" href="#planning">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>I researched the lone existing software system geared toward public libraries for managing kit reservations, as well as two other lending reservation systems meant for more general, mainstream use. I assembled a list of requirements based on my knowledge of library needs and workflows and organized them into tiers, from critical to wish list.</p>
+<h3 id="execution">
+  Execution
+  <a class="heading-link" href="#execution">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Based on the requirements, I implemented the app, first starting with a skeleton that allowed for user account creation and login. User accounts were saved to Firebase.</p>
+<p>I fleshed the skeleton out on the staff side, creating a form for creating book club kit records that saved to Firebase.</p>
+<figure><a href="images/create-kit-record.png"><img src="images/create-kit-record.png"
+         alt="Form with fields for creating a new kit record"/></a><figcaption>
+            <p>Form with fields for creating a new kit record</p>
+        </figcaption>
+</figure>
+
+<p>Once these records could be retrieved from Firebase and displayed on the app, I reviewed different software packages for displaying data as a table before choosing one that gave staff a robust view of the records, allowing them to search, sort and filter, to allow for quick location of records.</p>
+<figure><a href="images/collection-staff-display.png"><img src="images/collection-staff-display.png"
+         alt="A table displaying all kit records in the system, with tools for searching, sorting and filtering."/></a><figcaption>
+            <p>The staff view of the collection is a table that allows searching, sorting and filtering.</p>
+        </figcaption>
+</figure>
+
+<p>The patron&rsquo;s view of the collection, on the other hand, was more text-based to allow for browsing and more user-friendly review of each kit&rsquo;s details.</p>
+<p><figure><a href="images/collection-patron-display.png"><img src="images/collection-patron-display.png"
+         alt="A list of the items in the collection and their details."/></a><figcaption>
+            <p>The patron view of the collection is a list of each kit&rsquo;s details.</p>
+        </figcaption>
+</figure>
+<!-- raw HTML omitted --></p>
+<figure><a href="images/collection-patron-mobile.png"><img src="images/collection-patron-mobile.png"
+         alt="A list of the items in the collection and their details on the smaller screen of a mobile device." width="250px"/></a><figcaption>
+            <p>The collection list on mobile.</p>
+        </figcaption>
+</figure>
+
+<p>Next, I moved on to the calendar functionality. Similarly, I tried different calendar libraries until settling on one that met the project’s needs. This required also adding a library for date-handling.</p>
+<p><figure><a href="images/alert.png"><img src="images/alert.png"
+         alt="An alert displays when the user chooses a start checkout date that would mean a conflicting checkout period with existing reservations." width="500px"/></a><figcaption>
+            <p>An alert displays when a chosen checkout period conflicts with existing reservations.</p>
+        </figcaption>
+</figure>
+<!-- raw HTML omitted --></p>
+<figure><a href="images/reservation.png"><img src="images/reservation.png"
+         alt="An existing reservation displays on the calendar in gray and the user-chosen reservation displays in purple."/></a><figcaption>
+            <p>An existing reservation displays on the calendar in gray and the user-chosen reservation displays in purple.</p>
+        </figcaption>
+</figure>
+
+<p>The final step, now that creating reservations was possible, was displaying all reservations as a table in the staff view and, for patrons, filtering the table to show only the patron’s own reservations.</p>
+<figure><a href="images/staff-reservation-list.png"><img src="images/staff-reservation-list.png"
+         alt="A table showing all reservations in the system."/></a><figcaption>
+            <p>Staff can view a table of all reservations, which can be searched, sorted and filtered.</p>
+        </figcaption>
+</figure>
+
+<h3 id="technical-details">
+  Technical details
+  <a class="heading-link" href="#technical-details">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>App built with JavaScript and React Native framework.</li>
+<li>User and collection data stored in Firebase.</li>
+<li>Reservations compiled as JSON objects containing dates and calendar formatting for all 21 days of checkout, plus patron info. This is appended to an array attached to the book&rsquo;s entry in Firebase.</li>
+<li>Packages useful to the project&rsquo;s implementation:
+<ul>
+<li><a href="https://firebase.google.com/docs/web/setup">Firebase</a></li>
+<li><a href="https://reactnavigation.org/">React Navigation</a></li>
+<li><a href="https://github.com/wix/react-native-calendars">React Native Calendars</a></li>
+<li><a href="https://date-fns.org/">date-fns</a></li>
+<li><a href="https://reactnative.dev/docs/picker">React Native Picker</a></li>
+<li><a href="https://reactdatagrid.io/">React Data Grid</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="challenges-faced">
+  Challenges faced
+  <a class="heading-link" href="#challenges-faced">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The biggest challenge for me on this project was implementing the calendar functionality, as it required figuring out a number of tasks, including how to:</p>
+<ul>
+<li>Dynamically generate dates</li>
+<li>Ensure a requested reservation didn’t conflict with an existing reservation</li>
+<li>Format the calendar view</li>
+<li>Correctly construct the JSON object holding reservation data.</li>
+</ul>
+<p>This was wrapped up with the creation of a confirmation form to the patron displaying the kit’s book title and author, checkout date and due date and the patron’s contact info.</p>
+<h3 id="json-object-construction">
+  JSON object construction
+  <a class="heading-link" href="#json-object-construction">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Below is an example of how I constructed the JSON object for each kit record, which held both the kit details as well as reservations tied to the kit.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{   
+</span></span><span style="display:flex;"><span>    &#34;ageGroup&#34;: &#34;Juvenile&#34;,
+</span></span><span style="display:flex;"><span>    &#34;authorFirstName&#34;: &#34;J.K.&#34;,
+</span></span><span style="display:flex;"><span>    &#34;authorLastName&#34;: &#34;Rowling&#34;,
+</span></span><span style="display:flex;"><span>    &#34;genre&#34;: &#34;Fiction&#34;,
+</span></span><span style="display:flex;"><span>    &#34;kitContents&#34;: &#34;12 Books Total&#34;,
+</span></span><span style="display:flex;"><span>    &#34;location&#34;: &#34;SC&#34;,
+</span></span><span style="display:flex;"><span>    &#34;reservations&#34;: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            dates: [&#34;2021-12-06&#34;, &#34;2021-12-07&#34;, &#34;2021-12-08&#34;, ... &#34;2021-12-26&#34;]
+</span></span><span style="display:flex;"><span>            patronEmail: &#34;mail@mail.com&#34;
+</span></span><span style="display:flex;"><span>            patronFirstName: &#34;Patron&#34;
+</span></span><span style="display:flex;"><span>            patronID: &#34;123456789&#34;
+</span></span><span style="display:flex;"><span>            patronLastName: &#34;Test&#34;
+</span></span><span style="display:flex;"><span>            patronPhone: &#34;123-123-1234&#34;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            dates: [&#34;2022-01-08&#34;, &#34;2022-01-09&#34;, &#34;2022-01-10&#34;, ... &#34;2022-01-28&#34;]
+</span></span><span style="display:flex;"><span>            patronEmail: &#34;mail2@mail.com&#34;
+</span></span><span style="display:flex;"><span>            patronFirstName: &#34;Patron2&#34;
+</span></span><span style="display:flex;"><span>            patronID: &#34;987654321&#34;
+</span></span><span style="display:flex;"><span>            patronLastName: &#34;Test&#34;
+</span></span><span style="display:flex;"><span>            patronPhone: &#34;234-567-8901&#34;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    synopsis: &#34;Harry Potter learns he is a wizard.&#34;
+</span></span><span style="display:flex;"><span>    title: &#34;Harry Potter and the Sorcerer&#39;s Stone&#34;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="lessons-learned">
+  Lessons learned
+  <a class="heading-link" href="#lessons-learned">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>I learned how to dynamically generate the data I needed for the reservation functionality, updating the page’s state with the new data and assembling it into a JSON object to be written to and retrieved from Firebase.</p>
+<p>For example, this code pulled a reservation&rsquo;s start date from Firebase and added calendar formatting for a three-week period to be displayed on the calendar of a book kit&rsquo;s Schedule page.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>// Generate object holding 21 days / 3 weeks&#39; worth of dates with calendar formatting
+</span></span><span style="display:flex;"><span>const threeWeeks = (startDate) =&gt; {
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    const formattedDates = {};
+</span></span><span style="display:flex;"><span>    const parsedStartDate = parseISO(startDate);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    for (let i = 0; i &lt; 21; i++) {
+</span></span><span style="display:flex;"><span>        if (i === 0) {
+</span></span><span style="display:flex;"><span>            formattedDates[startDate] = { 
+</span></span><span style="display:flex;"><span>                startingDay: true, 
+</span></span><span style="display:flex;"><span>                color: &#39;#415CE0&#39;, 
+</span></span><span style="display:flex;"><span>                textColor: &#39;white&#39; 
+</span></span><span style="display:flex;"><span>            };
+</span></span><span style="display:flex;"><span>        } else if (i === 20) {
+</span></span><span style="display:flex;"><span>            const date = convert(addDays(parsedStartDate, i));
+</span></span><span style="display:flex;"><span>            formattedDates[date] = { 
+</span></span><span style="display:flex;"><span>                endingDay: true, 
+</span></span><span style="display:flex;"><span>                color: &#39;#415CE0&#39;, 
+</span></span><span style="display:flex;"><span>                textColor: &#39;white&#39; 
+</span></span><span style="display:flex;"><span>            };
+</span></span><span style="display:flex;"><span>        } else {
+</span></span><span style="display:flex;"><span>            const date = convert(addDays(parsedStartDate, i));
+</span></span><span style="display:flex;"><span>            formattedDates[date] = { color: &#39;#415CE0&#39;, textColor: &#39;white&#39; };
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    return formattedDates;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I gained experience judging the pros and cons of the numerous code libraries available for use: Even though these code libraries saved time on having to create some features from scratch, I had to gauge whether they sufficiently served my needs:</p>
+<ul>
+<li>Could I get them to run in my app?</li>
+<li>Did they have the features I needed?</li>
+<li>Were they too simple or too complex?</li>
+<li>Did they have adequate documentation?</li>
+</ul>
+<h2 id="future-development-ideas">
+  Future development ideas
+  <a class="heading-link" href="#future-development-ideas">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>The ability to edit reservations once they are made.</li>
+<li>Ideally, reservation functionality should be directly integrated into a library&rsquo;s catalog for maximum user-friendliness rather than siloed as a separate, non-connected app. This will be challenge; there are numerous library catalog software products used by libraries (although there are about 2-3 dominant providers), most of which are proprietary.</li>
+<li>The staff-side functionality needs to better support the administrative workflow: Libraries require windows of time before and after a kit is checked out for retrieval, processing, transit and, when needed, repair. The system should be able to account for and document these phases.</li>
+<li>Similarly, the staff-side reservation data should be made more detailed, providing information on a kit’s location as it travels through a library system and its status.</li>
+<li>A helpful addition to the app would be staff and patron email notifications and push alerts.</li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

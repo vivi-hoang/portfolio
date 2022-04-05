@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta name="robots" content="noindex">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Vivi Hoang">
+    <meta name="description" content="By Vivi Hoang
+April 20, 2021
+The tech industry continues to grapple with the lack of women and people of color in its ranks even as research has shown that diverse organizations perform better: The wider spectrum of backgrounds, experiences, identities and ideas may produce discomfort but they also produce innovation.1
+This paper focuses specifically on how issues of gender impacts requirements engineering, the phase in software development that entails eliciting, documenting, validating and negotiating and managing stakeholder specifications for a product.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How Gender Impacts Requirements Engineering"/>
+<meta name="twitter:description" content="By Vivi Hoang
+April 20, 2021
+The tech industry continues to grapple with the lack of women and people of color in its ranks even as research has shown that diverse organizations perform better: The wider spectrum of backgrounds, experiences, identities and ideas may produce discomfort but they also produce innovation.1
+This paper focuses specifically on how issues of gender impacts requirements engineering, the phase in software development that entails eliciting, documenting, validating and negotiating and managing stakeholder specifications for a product."/>
+
+    <meta property="og:title" content="How Gender Impacts Requirements Engineering" />
+<meta property="og:description" content="By Vivi Hoang
+April 20, 2021
+The tech industry continues to grapple with the lack of women and people of color in its ranks even as research has shown that diverse organizations perform better: The wider spectrum of backgrounds, experiences, identities and ideas may produce discomfort but they also produce innovation.1
+This paper focuses specifically on how issues of gender impacts requirements engineering, the phase in software development that entails eliciting, documenting, validating and negotiating and managing stakeholder specifications for a product." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vivi-hoang.github.io/writing/papers/gender-requirements-engineering/" /><meta property="article:section" content="writing" />
+<meta property="article:published_time" content="2022-03-28T14:50:51-07:00" />
+<meta property="article:modified_time" content="2022-03-28T14:50:51-07:00" />
+
+
+
+    <title>
+  How Gender Impacts Requirements Engineering · Vivi Hoang
+</title>
+
+    
+      <link rel="canonical" href="https://vivi-hoang.github.io/writing/papers/gender-requirements-engineering/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.9a3feeefe4fab5f185a31ada001c84fd2b1c518cfc69f9ec83f32053c56e47dd.css" integrity="sha256-mj/u7&#43;T6tfGFoxraAByE/SscUYz8afnsg/MgU8VuR90=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.95.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Vivi Hoang
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/background/">Background</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/writing/">Writing</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://vivi-hoang.github.io/writing/papers/gender-requirements-engineering/">
+          How Gender Impacts Requirements Engineering
+        </a>
+      </h1>
+    </header>
+
+    <p>By Vivi Hoang<br>
+April 20, 2021</p>
+<p>The tech industry continues to grapple with the lack of women and people of color in its ranks even as research has shown that diverse organizations perform better: The wider spectrum of backgrounds, experiences, identities and ideas may produce discomfort but they also produce innovation.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>This paper focuses specifically on how issues of gender impacts requirements engineering, the phase in software development that entails eliciting, documenting, validating and negotiating and managing stakeholder specifications for a product.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Due to the rigor that&rsquo;s needed to craft such a critical blueprint, this phase is considered a critical precondition to success.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>For clarity, the term &ldquo;sex&rdquo; refers to the biological differences between men and women. &ldquo;Gender&rdquo; refers to the social implications tied to a person&rsquo;s sex<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>The study of gender in requirements engineering has typically been limited in scope but they nevertheless have noteworthy implications on the perceptions and performance of women in the field, and how their numbers can be improved.</p>
+<h2 id="women-in-tech">
+  Women in tech
+  <a class="heading-link" href="#women-in-tech">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Nationally, the field of computer and information technology is expected to grow by 11 percent between 2019 and 2029.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> But constructing solutions for such a wide spectrum of people speaks to the need to ensure adequate representation, including of women, on the other end of the supply chain.</p>
+<p>In the U.S., women make up 50 percent of the population<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> but hold 26 percent of the job market in computer-related occupations.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> The numbers in the pipeline, though improving, could certainly be better: At the college level, young women make up 20 percent of computer science graduates and, at the high school level, 29 percent of students taking Advanced Placement computer science classes.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>&ldquo;It seems appropriate that a group who represents more than half of the working population should participate fully in activities of such importance,&rdquo; writes Chaudhry.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p>Even with this disparity, that&rsquo;s not to say the specific field of requirements engineering lacks women who are leading researchers and educators, including Ann Hickey, an associate dean of business and associate professor of information systems who&rsquo;s now retired from the University of Colorado Colorado Springs; Betty H.C. Cheng, a professor of computer science and engineering at Michigan State University; and Jane Cleland-Huang, professor of computer science and engineering at Notre Dame University.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>
+ </p>
+<h2 id="gender-and-perception-of-requirements-engineers">
+  Gender and perception of requirements engineers
+  <a class="heading-link" href="#gender-and-perception-of-requirements-engineers">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>In 2008, Chinese researchers set out to explore the state of requirements engineering in their country and the influence of Chinese culture on the field&rsquo;s practices. This included whether the work was typically done by women since female engineers are considered better communicators than their male counterparts.<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></p>
+<p>Of the 87 survey respondents, who came from a wide variety of businesses, universities and government organizations, 62 percent said there weren&rsquo;t obvious gender preferences when choosing who would work with the client. Typically, the work is assigned based on experience and competence. This belied other information gleaned from the survey, which suggested that &ldquo;masculinity tends to play [a] more important role in RE practices in China, although the impact is moderate.&rdquo;<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></p>
+<p>As a result of their findings, the researchers&rsquo; recommendations included gauging the client organization&rsquo;s levels of masculinity and adjusting how to address requirements-related conflicts, either by compromise, considered a more feminine trait or confrontation, considered more masculine.<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></p>
+<p>Information system projects suffer from substantial rates of failure but two critical factors associated with their success are the requirements phase, which occurs early on in the process, and the quality of leadership. How does gender play into that? On the one hand, studies show gender diversity in boardrooms leads to better decision-making and organizational performance. On the other hand, homogeneity is thought to help build trust, consensus and help with making critical decisions. And the requirements phase needs those qualities to make progress and communicate effectively.</p>
+<p>That&rsquo;s why the researchers wanted to look at whether the leader&rsquo;s gender mattered, and whether &ldquo;gender can overcome or substitute for some of the other required competencies.&rdquo;<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup></p>
+<p>Interviews with 32 professionals from the Portuguese information systems industry revealed a clear double standard: &ldquo;The results show that being a man is the most consistent dimension for achieving success.&rdquo;<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup></p>
+<p>For example, interview subjects identified the need &ldquo;to be a man&rdquo; as a condition for success in the task of resolving or minimizing conflict between requirements. Women, on the other hand, were expected to have a great deal more qualifications. The researchers urged project teams to be aware that this gender bias occurs and consider diversifying their teams.<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup></p>
+<h2 id="gender-and-performance">
+  Gender and performance
+  <a class="heading-link" href="#gender-and-performance">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Perceptions aside, how do men and women compare in terms of performance in requirements engineering? One of the qualities that factor into that question is that studies have shown that men and women solve problems differently. But software is often inadvertently designed in a way that benefits the problem-solving processing of male users rather than female users.<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup></p>
+<p>&ldquo;In fact, designing software systems to be more gender-inclusive can benefit all problem solvers, regardless of their gender.&rdquo;<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup></p>
+<p>When Grahla et al. asked 50 men and 50 women to do a number of computer-based tasks, found those with a more conservative tolerance for risk — a characteristic more frequently seen in women — were slower at solving the tasks but more accurate. Conversely, those with a higher tolerance for risk — a characteristic more frequently seen in men — were quicker but less accurate.</p>
+<p>The researchers interpreted this outcome as complementary ways of processing information and argued &ldquo;rather than targeting the requirements process to one [gender], there is more to be gained in leveraging their diversity. One possible way of doing so would be to build up teams with this diversity in terms of information processing, self-efficacy, and risk.&rdquo;<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup></p>
+<p>Those findings are reinforced by another, separate experiment documented in a 2021 paper in which 59 computer science undergraduates (about 19 percent of whom were women) were tasked with playing the role of requirements engineers: They listened to two videos in which stakeholders discussed their software needs and then were asked to translate that information into specifications.<sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup></p>
+<p>The researchers found that the male students took less effort, which was measured in time, to come up with their specifications. (Male students also had more experience specifying requirements, which could have affected the time they took to do their work.) Female students produced more accurate models.</p>
+<p>Although this experiment dealt with a small sample size of students rather than actual requirements engineering professionals, its results bolster the idea that there&rsquo;s value in strategically assembling and optimizing a requirements elicitation team of both men and women so they can take advantage of their complementary proficiencies in speed and accuracy and apply them toward shared goals.<sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup></p>
+<h2 id="ways-to-attract-women-to-requirements-engineering">
+  Ways to attract women to requirements engineering
+  <a class="heading-link" href="#ways-to-attract-women-to-requirements-engineering">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>At the university level, schools have experimented with a number of ways to draw in more female students to their computer science program.</p>
+<p>The way a course is simply labeled makes a difference to the types of student it attracts: When the University of California Berkley relabeled its Intro to Symbolic Programming course to Beauty and the Joy of Computing, more women than men enrolled in the class. It was the first time since at least 1993 (when enrollment records were digitized) — so possibly ever — that that had occurred.<sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup></p>
+<p>Carnegie Mellon&rsquo;s computer science department increased its enrollment of female students from 7 percent in 1995 to 42 percent in 2000 by adjusting its program to emphasize real-world examples (as opposed to theoretical ones), usability, natural language and — perhaps one of requirements engineering&rsquo;s greatest strengths in this context — computer science&rsquo;s relationships to other fields.<sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup></p>
+<p>Requirements engineering is an interdisciplinary field that draws on a wide spectrum of subjects ranging from cognitive psychology to computer science, as well as sociology, anthropology, linguistics and more.<sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup></p>
+<p>&ldquo;… requirements engineering (RE) is a human-centric and socio-technical activity. It requires intensive communication with various software stakeholders (customers, end-users, domain experts, project owners, etc.) to determine their requirements. The context in which RE is performed relies on cognitive and social knowledge as a basis for eliciting and modelling requirements,&rdquo; writes Alsanoosy et al.<sup id="fnref:25"><a href="#fn:25" class="footnote-ref" role="doc-noteref">25</a></sup></p>
+<p>This is a trait that should be marketed more at the university level as a way of attracting more women to the fold. Studies have shown female undergraduates gravitate toward computer science courses that emphasize the subject&rsquo;s value and application to other fields and retreat from those courses focused on &ldquo;pure technology,&rdquo; such as databases, programming and networking.<sup id="fnref:26"><a href="#fn:26" class="footnote-ref" role="doc-noteref">26</a></sup></p>
+<p>This makes requirements engineering an ideal fit for female students looking for inroads into computer science.</p>
+<!-- raw HTML omitted -->
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>McCausland, T. (2021). Why Innovation Needs More Diversity. <em>Research Technology
+Management</em>, 64(2), 59–63. <a href="https://doi.org/10.1080/08956308.2021.1868003">https://doi.org/10.1080/08956308.2021.1868003</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Pohl, K. &amp; Rupp, C. (2016). <em>Requirements engineering fundamentals</em> (2nd ed.). Rocky Nook.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>da Silva, F. P., Jerónimo, H. M., &amp; Vieira, P. R. (2019). Leadership competencies revisited:
+A causal configuration analysis of success in the requirements phase of information systems projects. <em>Journal of Business Research</em>, 101, 688–696. <a href="https://doi.org/10.1016/j.jbusres.2019.01.025">https://doi.org/10.1016/j.jbusres.2019.01.025</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Priado, C. P. (2019). <em>Invisible Women: Data Bias in a World Designed for Men</em>. Abrams
+Press.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>U.S. Bureau of Labor Statistics. (2021). <em>Occupational Outlook Handbook: Computer and
+Information Technology Occupations</em>. <a href="https://www.bls.gov/ooh/computer-and-information-technology/home.htm">https://www.bls.gov/ooh/computer-and-information-technology/home.htm</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>U.S. Census. (2019). <em>Population estimates, July 1, 2019, (V2019): Age and Sex</em>. <a href="https://www.census.gov/quickfacts/fact/table/US/PST045219">https://www.census.gov/quickfacts/fact/table/US/PST045219</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>U.S. Department of Labor. (2019) <em>Women in the Labor Force</em>. <a href="https://www.dol.gov/agencies/wb/data/facts-over-time/women-in-the-labor-force">https://www.dol.gov/agencies/wb/data/facts-over-time/women-in-the-labor-force</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Code.org. (2020, May 11). Women computer science graduates finally surpass record set
+17 years ago, but percentages lag behind. <a href="https://codeorg.medium.com/women-computer-science-graduates-finally-surpass-record-set-17-years-ago-20a79a76275">https://codeorg.medium.com/women-computer-science-graduates-finally-surpass-record-set-17-years-ago-20a79a76275</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Chaudhry, H., Wall, A. E., &amp; Wall, J. L. (2019). Exploring the Gender Gap in Tech
+Companies: Why Aren&rsquo;t There More Women? <em>Competition Forum</em>, 17(2), 275–280.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Carr, K. &amp; Niu, N. (2012) Women in Software Requirements Engineering: An Exploratory
+Study. <em>2012 ASEE Southeast Section Conference</em>. <a href="http://se.asee.org/proceedings/ASEE2012/Papers/FP2012niu149_544.PDF">http://se.asee.org/proceedings/ASEE2012/Papers/FP2012niu149_544.PDF</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>Liu, L., Zhang, H., Ma, W., Shan, S., Xu, J., Peng, F. &amp; Burda, T. (2009). Understanding
+Chinese Characteristics of Requirements Engineering. <em>2009 17th IEEE International Requirements Engineering Conference, Requirements Engineering Conference</em>, 2009. RE &lsquo;09. 17th IEEE International, 261–266. <a href="https://doi.org/10.1109/RE.2009.14">https://doi.org/10.1109/RE.2009.14</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>da Silva et al., 2019&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>da Silva et al., 2019&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p>da Silva et al., 2019&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>Gralha, C., Goulao, M., &amp; Araujo, J. (2019). Analysing Gender Differences in Building
+Social Goal Models: A Quasi-Experiment. <em>2019 IEEE 27th International Requirements Engineering Conference (RE), Requirements Engineering Conference (RE), 2019 IEEE 27th International, RE</em>, 165–176. <a href="https://doi.org/10.1109/RE.2019.00027">https://doi.org/10.1109/RE.2019.00027</a>&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20" role="doc-endnote">
+<p>Díaz, E., Panach, J. I., Rueda, S., Ruiz, M., &amp; Pastor, O. (2021). Are requirements elicitation sessions influenced by participants&rsquo; gender? An empirical experiment. <em>Science of
+Computer Programming</em>, 204. <a href="https://doi.org/10.1016/j.scico.2020.102595">https://doi.org/10.1016/j.scico.2020.102595</a>&#160;<a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21" role="doc-endnote">
+<p>Ibid.&#160;<a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22" role="doc-endnote">
+<p>Brown, K. (2014, Feb. 17). Tech shift: More women in computer science classes. <em>San
+Francisco Chronicle</em>. <a href="https://www.sfgate.com/education/article/Tech-shift-More-women-in-computer-science-classes-5243026.php">https://www.sfgate.com/education/article/Tech-shift-More-women-in-computer-science-classes-5243026.php</a>&#160;<a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23" role="doc-endnote">
+<p>Teichmann, M., Gebetsroither , E., Unterfurtner, C., &amp; Kreuzeder, A. (2014, April 30). What
+do we learn from Gender Studies for Requirements Engineering. <em>Requirements Engineering Magazine</em>. <a href="https://re-magazine.ireb.org/articles/what-do-we-learn-from-gender-studies-for-requirements-engineering">https://re-magazine.ireb.org/articles/what-do-we-learn-from-gender-studies-for-requirements-engineering</a>&#160;<a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:24" role="doc-endnote">
+<p>Carr &amp; Niu, 2012&#160;<a href="#fnref:24" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:25" role="doc-endnote">
+<p>Alsanoosy, T., Spichkova, M., &amp; Harland, J. (2020). “Cultural influence on requirements
+engineering activities: a systematic literature review and analysis.” <em>Requirements Engineering</em>, 25, 339-362. <a href="https://doi.org/10.1007/s00766-019-00326-9">https://doi.org/10.1007/s00766-019-00326-9</a>&#160;<a href="#fnref:25" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:26" role="doc-endnote">
+<p>Teichmann, 2014&#160;<a href="#fnref:26" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>
