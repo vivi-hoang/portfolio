@@ -16,23 +16,23 @@
 
     <meta name="author" content="Vivi Hoang">
     <meta name="description" content=" Name:
-  Email:
-  Message:
-  Send  ">
+*  Email:
+*  Message:
+*  Send  ">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Contact"/>
 <meta name="twitter:description" content=" Name:
-  Email:
-  Message:
-  Send  "/>
+*  Email:
+*  Message:
+*  Send  "/>
 
     <meta property="og:title" content="Contact" />
 <meta property="og:description" content=" Name:
-  Email:
-  Message:
-  Send  " />
+*  Email:
+*  Message:
+*  Send  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vivihoang.me/contact/" /><meta property="article:section" content="" />
 
@@ -152,15 +152,15 @@
     <form name="contact" method="POST" data-netlify="true">
         <p>
             <label>Name:<br>
-            <input type="text" name="name" /></label>
+            <input type="text" name="name" required>*</label>
         </p>
         <p>
             <label>Email:<br>
-            <input type="email" name="email" /></label>
+            <input type="email" name="email" required>*</label>
         </p>
         <p>
             <label>Message:<br> 
-            <textarea name="message" rows="5" cols="45"></textarea></label>
+            <textarea name="message" rows="7" cols="40" required></textarea>*</label>
         </p>
         <p>
             <button type="submit">Send</button>
