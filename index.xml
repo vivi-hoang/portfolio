@@ -6,14 +6,24 @@
     <description>Recent content on Vivi Hoang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Mar 2022 11:08:30 -0700</lastBuildDate><atom:link href="https://vivihoang.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 16:38:31 -0700</lastBuildDate><atom:link href="https://vivihoang.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building the Bridge I&#39;m Traversing</title>
+      <link>https://vivihoang.me/posts/2022_0527_day_1/</link>
+      <pubDate>Thu, 26 May 2022 16:38:31 -0700</pubDate>
+      
+      <guid>https://vivihoang.me/posts/2022_0527_day_1/</guid>
+      <description>I don&amp;rsquo;t know how this is going to turn out but I won&amp;rsquo;t know unless I try. This is a record of my journey, and my successes and failures.
+Change is harder as you get older but I&amp;rsquo;ve resolved not to let fear of the unknown stop me: In the summer of 2020 I quit my job to go back to school. Having earned a library science degree in the past, I&amp;rsquo;d been working for a public library in West Michigan but long been curious about the subject of computer science.</description>
+    </item>
+    
     <item>
       <title>Background</title>
       <link>https://vivihoang.me/background/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://vivihoang.me/background/</guid>
-      <description>Education    Master of Science in Applied Computer Science
+      <description>Education Master of Science in Applied Computer Science
 Grand Valley State University — December 2021
 Allendale, Michigan
 Master of Science in Information Studies
@@ -21,7 +31,7 @@ The University of Texas at Austin — December 2010
 Austin, Texas
 Bachelor of Journalism
 The University of Texas at Austin — May 2000 Austin, Texas
-Skills     Drupal content management system WordPress content management system SirsiDynix integrated library system HTML CSS Git Microsoft Office Google Drive Submittable contest management system Beanstack reading program system ReadSquared reading program system SpringShare LibAnswers communication platform Video editing  Work    GRADUATE ASSISTANT</description>
+Skills Drupal content management system WordPress content management system SirsiDynix integrated library system HTML CSS Git Microsoft Office Google Drive Submittable contest management system Beanstack reading program system ReadSquared reading program system SpringShare LibAnswers communication platform Video editing Work GRADUATE ASSISTANT</description>
     </item>
     
     <item>
@@ -79,7 +89,7 @@ Her daughter wasn&amp;rsquo;t fooled by the subterfuge and spotted Weitzman, 48,
       <pubDate>Thu, 24 Mar 2022 18:54:01 -0700</pubDate>
       
       <guid>https://vivihoang.me/writing/articles/tooth-fairy/</guid>
-      <description>Youngsters share what they know about pixie who spreads love and cash    By Vivi Hoang, staff writer
+      <description>Youngsters share what they know about pixie who spreads love and cash By Vivi Hoang, staff writer
 The Tennessean (Nashville, Tenn.)
 Sept. 18, 2006
 Of all the childhood creatures lurking out there, one in particular has long baffled us.
@@ -184,9 +194,9 @@ Over the course of five years, author Craig Taylor, a Canadian who moved to Lond
       <pubDate>Wed, 23 Mar 2022 15:43:52 -0700</pubDate>
       
       <guid>https://vivihoang.me/posts/test-post/</guid>
-      <description>&amp;ldquo;Back View of a Woman Sitting on a Bench&amp;rdquo; by Yuri Yuhara
-  Ipsum labore anim labore dolor mollit aliquip amet sint est elit do. Ea velit occaecat magna non. Sunt ea veniam commodo ea laboris consequat mollit fugiat. Officia in id dolor ex.
-Ut exercitation sint ad esse eu dolor mollit. Amet labore non nisi mollit dolor. Et aute minim enim ut cillum cupidatat id. Incididunt officia labore nisi aliquip magna aliqua.</description>
+      <description>Question I can put a question here? &amp;ldquo;Back View of a Woman Sitting on a Bench&amp;rdquo; by Yuri Yuhara
+Ipsum labore anim labore dolor mollit aliquip amet sint est elit do. Ea velit occaecat magna non. Sunt ea veniam commodo ea laboris consequat mollit fugiat. Officia in id dolor ex.
+Ut exercitation sint ad esse eu dolor mollit. Amet labore non nisi mollit dolor. Et aute minim enim ut cillum cupidatat id.</description>
     </item>
     
     <item>
@@ -196,7 +206,7 @@ Ut exercitation sint ad esse eu dolor mollit. Amet labore non nisi mollit dolor.
       
       <guid>https://vivihoang.me/about/</guid>
       <description>Welcome to my site! I&amp;rsquo;m Vivi Hoang, pronounced &amp;ldquo;Vee-vee Hwong.&amp;rdquo;
-I like to follow my curiosity where it leads me. It&amp;rsquo;s taken me to Washington State, West Michigan, West Texas, Houston, Nashville and Japan. I&amp;rsquo;ve shifted course numerous times and while it&amp;rsquo;s always hard being a beginner again, each new role has been an adventure and enabled me to further add to my toolset and connect with the community in different ways.</description>
+I like to follow my curiosity where it leads me. It&amp;rsquo;s taken me to Washington State, West Michigan, West Texas, Houston, Nashville and Japan. I&amp;rsquo;ve shifted course numerous times and while it&amp;rsquo;s always hard being a beginner again, each new role has been an adventure and enabled me to further add to my toolset and connect with customers and the community in different ways.</description>
     </item>
     
     <item>
@@ -227,24 +237,6 @@ I like to follow my curiosity where it leads me. It&amp;rsquo;s taken me to Wash
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://vivihoang.me/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://vivihoang.me/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://vivihoang.me/posts/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://vivihoang.me/posts/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Emoji Support</title>
       <link>https://vivihoang.me/posts/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
@@ -268,10 +260,10 @@ I like to follow my curiosity where it leads me. It&amp;rsquo;s taken me to Wash
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vivihoang.me/contact/</guid>
-      <description> Name:
-*  Email:
-*  Message:
-*  Send  </description>
+      <description>Name:
+* Email:
+* Message:
+* Send </description>
     </item>
     
   </channel>
